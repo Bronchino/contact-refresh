@@ -12,10 +12,8 @@ const Index = () => (
   <div className="min-h-screen bg-background">
     <Helmet>
       <title>Ginecologo Palermo | Dott. Claudio Rossi</title>
-      <meta
-        name="description"
-        content="Visita ginecologica, ecografia e prevenzione a Palermo. Studio del Dott. Claudio Rossi, Via Marchese Ugo 56. Prenota online."
-      />
+      <meta name="description" content="Visita ginecologica, ecografia e prevenzione a Palermo. Studio del Dott. Claudio Rossi, Via Marchese Ugo 56. Prenota online." />
+      <link rel="canonical" href="https://www.rossiginecologo.it/" />
     </Helmet>
     <Header />
     <HeroSection />
