@@ -20,44 +20,12 @@ const ChirurgiaLaparoscopica = () => {
       <Header />
 
       <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 to-secondary/5 py-16 sm:py-20 animate-fade-in">
-          <div className="container px-4">
-            <BackButton />
-            <Breadcrumb className="mb-6">
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/" className="flex items-center">
-                      <Home className="h-4 w-4" />
-                    </Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/blog">Blog</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Chirurgia Laparoscopica</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-            <div className="max-w-4xl mx-auto">
-              <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-semibold text-sm mb-4">
-                Ginecologia · Chirurgia mini-invasiva
-              </span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-                Chirurgia laparoscopica e robotica con <span className="text-primary">Sistema Da Vinci Xi</span>
-              </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground">
-                Meno invasiva, più precisa: vantaggi, indicazioni e differenze rispetto alla chirurgia tradizionale.
-              </p>
-            </div>
-          </div>
-        </section>
+        <BlogHero
+          label="Ginecologia · Chirurgia mini-invasiva"
+          title="Chirurgia laparoscopica e robotica con Sistema Da Vinci Xi"
+          description="Meno invasiva, più precisa: vantaggi, indicazioni e differenze rispetto alla chirurgia tradizionale."
+          breadcrumbLabel="Chirurgia Laparoscopica"
+        />
 
         {/* Table of Contents */}
         <section className="container px-4 py-8">

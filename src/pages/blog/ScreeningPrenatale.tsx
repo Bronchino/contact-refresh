@@ -56,29 +56,16 @@ const ScreeningPrenatale = () => {
       </Helmet>
       
       <Header />
+      <BlogHero
+        label="Ostetricia · Screening"
+        title="Come orientarsi tra gli screening prenatali: Test combinato e test del DNA fetale"
+        description="Guida completa allo screening prenatale non invasivo: differenze, affidabilità e accreditamento FMF."
+        breadcrumbLabel="Screening Prenatale"
+      />
       
-      <main className="py-16 sm:py-20 animate-fade-in">
+      <main className="py-16 sm:py-20">
         <div className="container px-4 max-w-4xl mx-auto">
-          <BackButton />
-          <Breadcrumb className="mb-6">
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild><Link to="/" className="flex items-center"><Home className="h-4 w-4" /></Link></BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild><Link to="/blog">Blog</Link></BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Screening Prenatale</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
           <article className="prose prose-lg dark:prose-invert max-w-none">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-primary">
-              Come orientarsi tra gli screening prenatali: Test combinato e test del DNA fetale
-            </h1>
 
             <p className="text-lg leading-relaxed mb-6">
               Durante il primo trimestre di gravidanza, molte donne si chiedono come poter conoscere lo stato di salute del proprio bambino. 
