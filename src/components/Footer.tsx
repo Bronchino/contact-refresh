@@ -9,7 +9,11 @@ const Footer = () => (
         <div>
           <h3 className="font-serif text-lg font-semibold mb-4">Dott. Claudio Rossi</h3>
           <p className="text-sm text-background/70 leading-relaxed">
-            Specialista in Ostetricia e Ginecologia. Studio privato in Via Marchese Ugo 56, Palermo.
+            Specialista in Ostetricia e Ginecologia
+            <br />
+            Dirigente Medico presso Az. Ospedaliera Villa Sofia – Cervello
+            <br />
+            Studio privato in Via Marchese Ugo 56, Palermo.
           </p>
         </div>
 
