@@ -29,6 +29,7 @@ const Footer = () => (
         <div>
           <h4 className="font-sans text-sm font-semibold uppercase tracking-wider mb-4">Articoli</h4>
           <ul className="space-y-2 text-sm text-background/70">
+            <li><Link to="/blog/prima-visita-ginecologica" className="hover:text-background transition-colors">Prima visita ginecologica</Link></li>
             <li><Link to="/blog/chirurgia-laparoscopica" className="hover:text-background transition-colors">Chirurgia laparoscopica</Link></li>
             <li><Link to="/blog/screening-prenatale" className="hover:text-background transition-colors">Screening prenatale</Link></li>
             <li><Link to="/blog/infertilita" className="hover:text-background transition-colors">Infertilità di coppia</Link></li>
