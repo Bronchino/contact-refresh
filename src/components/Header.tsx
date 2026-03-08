@@ -39,7 +39,9 @@ const Header = () => {
             <img
               src={logoCr}
               alt="Dott. Claudio Rossi"
-              className="h-10 sm:h-12 w-auto"
+              className={`h-10 sm:h-12 w-auto transition-all duration-300 ${
+                scrolled ? "" : "brightness-0 invert"
+              }`}
             />
           </a>
 
