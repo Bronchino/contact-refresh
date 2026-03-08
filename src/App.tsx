@@ -17,6 +17,7 @@ import StreptococcoB from "./pages/blog/StreptococcoB";
 import GravidanzaExtrauterina from "./pages/blog/GravidanzaExtrauterina";
 import DisturbidelCiclo from "./pages/blog/DisturbidelCiclo";
 import PapTestHpv from "./pages/blog/PapTestHpv";
+import PrimaEcografia from "./pages/blog/PrimaEcografia";
 import Servizi from "./pages/Servizi";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
