@@ -1,63 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
 
 @layer base {
   :root {
     --background: 210 20% 98%;
     --foreground: 215 25% 15%;
-
     --card: 0 0% 100%;
     --card-foreground: 215 25% 15%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
-
     --primary: 224 72% 36%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 210 20% 96%;
     --secondary-foreground: 215 25% 15%;
-
     --muted: 210 20% 96%;
     --muted-foreground: 215 14% 46%;
-
     --accent: 338 70% 80%;
     --accent-foreground: 224 72% 36%;
-
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-
     --border: 214 32% 91%;
     --input: 214 32% 91%;
     --ring: 224 72% 36%;
-
     --radius: 0.75rem;
-
-    /* Custom tokens */
     --hero-bg: 224 80% 34%;
     --hero-bg-deep: 224 85% 27%;
     --rose-accent: 338 70% 80%;
     --slate-heading: 215 25% 15%;
-
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -90,11 +69,7 @@ All colors MUST be HSL.
     --sidebar-border: 224 20% 18%;
     --sidebar-ring: 338 70% 80%;
   }
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
-
-@layer base {
   * {
     @apply border-border;
   }
