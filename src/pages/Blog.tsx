@@ -55,7 +55,7 @@ const Blog = () => (
 
     {/* Hero */}
     <section className="relative bg-hero overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.06]" aria-hidden="true">
+      <div className="absolute inset-0 opacity-[0.06] pointer-events-none" aria-hidden="true">
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-accent blur-3xl -translate-y-1/2 translate-x-1/2" />
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 pt-32 sm:pt-40 pb-20 sm:pb-28">
