@@ -14,6 +14,7 @@ import ScreeningPrenatale from "./pages/blog/ScreeningPrenatale";
 import ScreeningVsDiagnostic from "./pages/blog/ScreeningVsDiagnostic";
 import StreptococcoB from "./pages/blog/StreptococcoB";
 import GravidanzaExtrauterina from "./pages/blog/GravidanzaExtrauterina";
+import Servizi from "./pages/Servizi";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
