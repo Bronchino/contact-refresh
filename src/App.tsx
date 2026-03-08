@@ -31,6 +31,7 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/chirurgia-laparoscopica" element={<ChirurgiaLaparoscopica />} />
             <Route path="/blog/infertilita" element={<Infertilita />} />
+            <Route path="/blog/prima-visita-ginecologica" element={<PrimaVisitaGinecologica />} />
             <Route path="/blog/screening-prenatale" element={<ScreeningPrenatale />} />
             <Route path="/blog/screening-vs-diagnostico" element={<ScreeningVsDiagnostic />} />
             <Route path="/blog/streptococco-b" element={<StreptococcoB />} />
