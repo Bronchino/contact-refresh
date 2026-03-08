@@ -107,6 +107,16 @@ const PrimaEcografia = () => {
                     />
                   </PopoverContent>
                 </Popover>
+                {lmpDate && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-muted-foreground hover:text-foreground"
+                    onClick={() => setLmpDate(undefined)}
+                  >
+                    Cancella
+                  </Button>
+                )}
               </div>
 
               {lmpDate && sevenWeeksDate && elevenWeeksDate && (
