@@ -10,7 +10,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
-import { Calendar, Heart, HelpCircle, CheckCircle, Home } from "lucide-react";
+import { Calendar, Heart, HelpCircle, CheckCircle, Home, Phone, Mail, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -19,12 +19,14 @@ const PrimaVisitaGinecologica = () => {
     <>
       <Helmet>
         <title>Prima Visita Ginecologica: Cosa Aspettarsi e Come Prepararsi | Dott. Rossi Palermo</title>
-        <meta name="description" content="Guida completa alla prima visita ginecologica a Palermo: quando farla, il Pap Test, come prepararsi e perché non è dolorosa." />
+        <meta name="description" content="Guida completa alla prima visita ginecologica a Palermo: quando farla, il Pap Test, come prepararsi e perché non è dolorosa. Consigli del Dott. Claudio Rossi." />
         <link rel="canonical" href="https://www.rossiginecologo.it/blog/prima-visita-ginecologica" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Prima Visita Ginecologica: Cosa Aspettarsi e Come Prepararsi" />
-        <meta property="og:description" content="Guida completa alla prima visita ginecologica: quando farla, come prepararsi, Pap Test e informazioni pratiche." />
+        <meta property="og:description" content="Guida completa alla prima visita ginecologica a Palermo: quando farla, il Pap Test, come prepararsi e perché non è dolorosa." />
         <meta name="keywords" content="prima visita ginecologica, ginecologo, Pap Test, Palermo, prevenzione, salute donna" />
+        <meta name="author" content="Dott. Claudio Rossi" />
+        <meta name="pubdate" content="2024-05-22" />
       </Helmet>
       
       <div className="min-h-screen">
@@ -56,205 +58,236 @@ const PrimaVisitaGinecologica = () => {
               </Breadcrumb>
               <div className="max-w-4xl mx-auto mt-6">
                 <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-primary">
-                  Prima Visita Ginecologica: Cosa Aspettarsi e Come Prepararsi
+                  Prima visita ginecologica: tutto quello che devi sapere
                 </h1>
 
-                <p className="text-xl text-muted-foreground mb-12">
-                  Guida completa per affrontare la tua prima visita ginecologica con serenità. Quando farla, come prepararsi e tutto quello che devi sapere.
+                <p className="text-xl text-muted-foreground mb-8">
+                  La prima visita ginecologica è un momento fondamentale per la salute di ogni donna, eppure è spesso rimandato per timore o imbarazzo. Questa guida nasce per rispondere con chiarezza a tutte le domande che spesso non si ha il coraggio di porre.
+                </p>
+
+                <p className="text-lg text-foreground/80 mb-12 leading-relaxed">
+                  Che tu abbia 16 anni o 35, qui troverai tutto ciò che ti serve sapere per affrontare la tua <strong>visita ginecologica a Palermo</strong> con estrema serenità.
                 </p>
 
                 <div className="prose prose-lg max-w-none">
+
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12 flex items-center gap-3">
+                    <Calendar className="h-8 w-8 text-primary" />
+                    Quando fare la prima visita ginecologica?
+                  </h2>
+
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">Qual è l'età giusta per la prima visita?</h3>
+                  <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
+                    Le linee guida internazionali raccomandano di effettuare il primo controllo <strong>entro i 21 anni</strong>, oppure <strong>entro un anno dall'inizio dell'attività sessuale</strong>.
+                  </p>
+
+                  <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
+                    Tuttavia, è consigliabile consultare un ginecologo già a <strong>14-16 anni</strong> in caso di:
+                  </p>
+                  <ul className="text-lg text-foreground/80 mb-8 space-y-3">
+                    <li>Ciclo mestruale irregolare, troppo doloroso o assente.</li>
+                    <li>Perdite vaginali anomale.</li>
+                    <li>Necessità di consulenza sulla contraccezione.</li>
+                  </ul>
+
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">Devo aspettare di essere sessualmente attiva?</h3>
+                  <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+                    <strong>No.</strong> La visita ginecologica è un atto di prevenzione medica. Molte ragazze effettuano il primo controllo prima di avere rapporti sessuali per monitorare il corretto sviluppo dell'apparato riproduttivo.
+                  </p>
+
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12 flex items-center gap-3">
+                    <CheckCircle className="h-8 w-8 text-primary" />
+                    Come prepararsi alla visita ginecologica
+                  </h2>
+
+                  <h3 className="text-2xl font-bold mb-6 text-foreground">Consigli pratici per la preparazione</h3>
+                  <ul className="text-lg text-foreground/80 mb-8 space-y-5">
+                    <li>
+                      <strong>Igiene:</strong> Segui la tua normale routine quotidiana. <strong>Evita lavande vaginali</strong> prima della visita perché possono alterare la flora batterica e falsare eventuali esami.
+                    </li>
+                    <li>
+                      <strong>Periodo del ciclo:</strong> È preferibile eseguire la visita <strong>lontano dal flusso mestruale</strong>. Se hai il ciclo, è comunque possibile eseguire un'<strong>ecografia addominale a vescica piena</strong>, ma per un controllo completo è meglio attendere la fine delle perdite.
+                    </li>
+                    <li>
+                      <strong>Documentazione:</strong> Porta con te eventuali esami precedenti e segna la data dell'ultima mestruazione (puoi usare app come <em>Clue</em> o <em>Flo</em>).
+                    </li>
+                    <li>
+                      <strong>Abbigliamento:</strong> Indossa vestiti comodi e facili da togliere.
+                    </li>
+                  </ul>
+
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">Posso portare qualcuno con me?</h3>
+                  <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+                    Certamente. Molte pazienti scelgono di venire accompagnate dalla mamma, da un'amica o dal partner. La tua privacy è sempre garantita e deciderai tu se farli entrare in studio durante il colloquio o la visita.
+                  </p>
+
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12">
+                    Cosa succede durante la prima visita: passo dopo passo
+                  </h2>
+
+                  <div className="space-y-6 mb-8">
+                    <div className="bg-primary/5 p-6 rounded-lg border-l-4 border-primary">
+                      <h4 className="text-xl font-bold mb-3 text-foreground">1. Anamnesi (Colloquio)</h4>
+                      <p className="text-lg text-foreground/80 leading-relaxed">
+                        Parleremo della tua storia clinica e familiare. Non ci sono domande sbagliate: ogni dettaglio aiuta a tutelare la tua salute.
+                      </p>
+                    </div>
+
+                    <div className="bg-primary/5 p-6 rounded-lg border-l-4 border-primary">
+                      <h4 className="text-xl font-bold mb-3 text-foreground">2. Visita esterna</h4>
+                      <p className="text-lg text-foreground/80 leading-relaxed">
+                        Il medico controlla i genitali esterni per valutare l'assenza di lesioni o anomalie.
+                      </p>
+                    </div>
+
+                    <div className="bg-primary/5 p-6 rounded-lg border-l-4 border-primary">
+                      <h4 className="text-xl font-bold mb-3 text-foreground">3. Visita interna ed Ecografia</h4>
+                      <ul className="text-lg text-foreground/80 space-y-3">
+                        <li>
+                          <strong>Se sei vergine:</strong> Non si usa lo speculum e non si esegue il Pap Test. Si preferisce l'<strong>ecografia transaddominale</strong> (sulla pancia).
+                        </li>
+                        <li>
+                          <strong>Se sei sessualmente attiva:</strong> Si può utilizzare lo <strong>speculum</strong> per visualizzare il collo dell'utero ed eseguire il Pap Test.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12 flex items-center gap-3">
+                    <Heart className="h-8 w-8 text-primary" />
+                    Fa male la prima visita ginecologica?
+                  </h2>
+
                   <div className="bg-muted/30 p-6 rounded-lg mb-8">
                     <p className="text-lg text-foreground/80 leading-relaxed mb-0">
-                      La prima visita ginecologica è un momento importante nella vita di ogni donna, eppure è spesso rimandato per timore, imbarazzo o semplicemente perché non si sa cosa aspettarsi. Questa guida è nata proprio per questo: rispondere con chiarezza a tutte le domande che si fanno — ma spesso non si osano fare — prima di entrare nello studio di un ginecologo.
+                      <strong>No, la visita non deve fare male.</strong> Puoi avvertire una sensazione di pressione, soprattutto se sei tesa. Il segreto è rilassare la muscolatura: un buon ginecologo spiega ogni passaggio e si ferma immediatamente se avverti dolore.
                     </p>
                   </div>
 
-                  <h2 className="text-2xl font-bold mb-6 text-foreground mt-8 flex items-center gap-3">
-                    <Calendar className="h-7 w-7 text-primary" />
-                    Quando Fare la Prima Visita Ginecologica
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12">
+                    Il Pap Test e lo screening
                   </h2>
 
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Qual è l'età giusta?</h3>
-                  <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                    Non esiste un'età "ufficiale", ma le linee guida internazionali raccomandano di effettuare la prima visita ginecologica entro i 21 anni, oppure entro un anno dall'inizio dell'attività sessuale, se questa avviene prima.
-                  </p>
-
-                  <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                    In molti casi è consigliabile andare dal ginecologo anche prima, già a partire dai 14-16 anni, nei seguenti casi:
-                  </p>
-                  <ul className="text-lg text-foreground/80 mb-6 space-y-2">
-                    <li>Ciclo mestruale irregolare o assente</li>
-                    <li>Dolori mestruali molto forti (dismenorrea)</li>
-                    <li>Perdite vaginali anomale</li>
-                    <li>Dubbi sulla contraccezione</li>
-                    <li>Ansia o preoccupazioni legate alla sfera ginecologica</li>
-                  </ul>
-
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Devo aspettare di essere sessualmente attiva?</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">Quando fare il primo Pap Test?</h3>
                   <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                    <strong>No.</strong> La visita ginecologica non ha nulla a che fare con l'attività sessuale. È una visita medica di prevenzione, esattamente come andare dal dentista o dall'oculista. Molte ragazze effettuano la prima visita prima ancora di avere rapporti sessuali, semplicemente per monitorare la propria salute.
+                    In Italia è raccomandato a partire dai <strong>25 anni</strong>, a patto che si sia già iniziato l'attività sessuale. Il test serve a individuare precocemente lesioni del collo dell'utero.
                   </p>
 
-                  <h2 className="text-2xl font-bold mb-6 text-foreground mt-8 flex items-center gap-3">
-                    <CheckCircle className="h-7 w-7 text-primary" />
-                    Come Prepararsi alla Prima Visita
-                  </h2>
-
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Devo fare qualcosa di speciale?</h3>
-                  <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                    La preparazione è semplice:
-                  </p>
-                  <ul className="text-lg text-foreground/80 mb-6 space-y-4">
-                    <li>
-                      <strong>Igiene normale</strong> — Fai la tua igiene quotidiana abituale. Non è necessario né consigliato fare lavande vaginali prima della visita: alterano la flora batterica naturale e possono falsare alcuni esami.
-                    </li>
-                    <li>
-                      <strong>Periodo del ciclo</strong> — La visita ginecologica è preferibile eseguirla lontano dal flusso mestruale. Durante il ciclo è comunque possibile eseguire un'ecografia addominale a vescica piena.
-                    </li>
-                    <li>
-                      <strong>Cosa portare</strong> — Porta con te eventuali esami precedenti, la lista dei farmaci che assumi e, se ce l'hai, un diario del ciclo mestruale con le date degli ultimi 3 mesi.
-                    </li>
-                    <li>
-                      <strong>Cosa indossare</strong> — Vestiti comodi, facili da togliere. Non è necessario nulla di particolare.
-                    </li>
-                  </ul>
-
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Posso portare qualcuno con me?</h3>
                   <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                    Assolutamente sì. Molte ragazze alla prima visita vengono accompagnate dalla mamma, da un'amica o dal partner. Lo studio è un ambiente riservato e la tua privacy è sempre garantita. Decidi tu chi vuoi avere accanto.
+                    <strong>Importante:</strong> Per eseguire il Pap Test è necessario l'uso dello speculum e <strong>non deve esserci sangue</strong> (nemmeno spotting di fine ciclo), altrimenti il campione non sarà leggibile.
                   </p>
 
-                  <h2 className="text-2xl font-bold mb-6 text-foreground mt-8">
-                    Cosa Succede Durante la Visita
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">Cos'è il Test HPV?</h3>
+                  <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+                    Dai <strong>30-35 anni</strong>, si utilizza spesso il Test HPV come screening primario ogni 5 anni per rilevare la presenza del Papillomavirus.
+                  </p>
+
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12">
+                    Il segreto professionale: la tua riservatezza
                   </h2>
 
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Come si svolge passo per passo</h3>
-                  <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                    Una visita ginecologica completa si svolge in tre fasi:
-                  </p>
-
-                  <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                    <h4 className="text-lg font-bold mb-2 text-foreground">1. Anamnesi (colloquio iniziale)</h4>
-                    <p className="text-lg text-foreground/80 leading-relaxed">
-                      Il ginecologo ti farà alcune domande sulla tua storia clinica: l'età della prima mestruazione, la regolarità del ciclo, eventuali sintomi o disturbi, la tua storia familiare, l'uso di contraccettivi. Non ci sono domande giuste o sbagliate — ogni informazione serve a capire meglio la tua salute. Parla liberamente e senza imbarazzo.
-                    </p>
-                  </div>
-
-                  <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                    <h4 className="text-lg font-bold mb-2 text-foreground">2. Visita esterna</h4>
-                    <p className="text-lg text-foreground/80 leading-relaxed">
-                      Il medico effettua un esame esterno dei genitali per valutare l'aspetto generale e la presenza di eventuali lesioni o anomalie visibili. È veloce e indolore.
-                    </p>
-                  </div>
-
-                  <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                    <h4 className="text-lg font-bold mb-2 text-foreground">3. Visita interna (se appropriata)</h4>
-                    <p className="text-lg text-foreground/80 leading-relaxed">
-                      Nei casi in cui sia indicata, viene effettuata una visita bimanuale — il medico posiziona due dita in vagina e con l'altra mano valuta dall'esterno l'utero e le ovaie. Nelle ragazze giovani o vergini, questa parte può essere omessa o sostituita dall'ecografia transaddominale.
-                    </p>
-                  </div>
-
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Quanto dura la visita?</h3>
-                  <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                    Una prima visita ginecologica completa dura generalmente 20-30 minuti. È più lunga delle visite successive perché include il colloquio iniziale approfondito e la raccolta della storia clinica.
-                  </p>
-
-                  <h2 className="text-2xl font-bold mb-6 text-foreground mt-8 flex items-center gap-3">
-                    <Heart className="h-7 w-7 text-primary" />
-                    Fa Male la Prima Visita Ginecologica?
-                  </h2>
-
-                  <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                    Questa è la domanda che quasi tutte fanno — e che in pochi rispondono con onestà.
-                  </p>
-
-                  <div className="bg-muted/30 p-6 rounded-lg mb-6">
+                  <div className="bg-muted/30 p-6 rounded-lg mb-8">
                     <p className="text-lg text-foreground/80 leading-relaxed mb-0">
-                      <strong>La visita ginecologica non dovrebbe fare male.</strong> Può causare un leggero fastidio o una sensazione di pressione, soprattutto se si è tese o in apprensione, ma non è dolorosa.
+                      Tutto ciò che dirai al tuo ginecologo è protetto dal <strong>segreto professionale</strong>. Questo vale anche per le <strong>minorenni</strong>: il ginecologo non è obbligato a riferire ai genitori i dettagli del colloquio (come l'attività sessuale o la contraccezione), salvo rischi gravi per la salute.
                     </p>
                   </div>
 
-                  <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                    Il modo migliore per rendere la visita più confortevole è cercare di rilassarsi: la tensione muscolare aumenta il disagio. Un buon ginecologo lavora sempre con calma, spiega ogni passaggio prima di eseguirlo e si ferma se avverti dolore.
-                  </p>
-
-                  <h2 className="text-2xl font-bold mb-6 text-foreground mt-8">
-                    Il Pap Test: Quando Iniziare
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12">
+                    Quanto costa la prima visita ginecologica a Palermo?
                   </h2>
 
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Quando fare il primo Pap Test?</h3>
-                  <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                    Le linee guida italiane raccomandano di effettuare il primo Pap Test a 25 anni, indipendentemente dall'inizio dell'attività sessuale. Dopo il primo esame negativo, va ripetuto ogni 3 anni.
+                  <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+                    Il costo per una visita ginecologica privata a Palermo nel mio studio varia generalmente tra <strong>100 e 160 euro</strong>, a seconda degli esami diagnostici necessari (ecografia, Pap Test, ecc.).
                   </p>
 
-                  <h3 className="text-xl font-bold mb-4 text-foreground">Cos'è il Test HPV?</h3>
-                  <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                    Il Test HPV rileva la presenza del Papillomavirus umano, principale causa del tumore del collo dell'utero. A partire dai 30-35 anni, nelle donne già seguite con Pap Test, può essere utilizzato come test di screening primario ogni 5 anni.
-                  </p>
-
-                  <h2 className="text-2xl font-bold mb-6 text-foreground mt-8">
-                    Contraccezione e Salute Riproduttiva
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12 flex items-center gap-3">
+                    <HelpCircle className="h-8 w-8 text-primary" />
+                    FAQ — Domande frequenti
                   </h2>
 
-                  <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                    La prima visita è il momento ideale per parlare di contraccezione senza fretta e senza giudizi. Il ginecologo ti aiuterà a valutare il metodo più adatto alla tua situazione: pillola, cerotto, anello vaginale, spirale o preservativo.
-                  </p>
-
-                  <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                    Non esistono domande stupide su questo tema. Una contraccezione scelta consapevolmente è più efficace e meglio tollerata.
-                  </p>
-
-                  <h2 className="text-2xl font-bold mb-6 text-foreground mt-8 flex items-center gap-3">
-                    <HelpCircle className="h-7 w-7 text-primary" />
-                    Domande Frequenti
-                  </h2>
-
-                  <div className="space-y-4 mb-8">
-                    <div className="border-l-4 border-primary/30 pl-4">
-                      <h4 className="font-bold text-foreground mb-2">A che età si va dal ginecologo per la prima volta?</h4>
-                      <p className="text-foreground/80">Non esiste un'età obbligatoria, ma si consiglia entro i 21 anni o entro un anno dall'inizio dell'attività sessuale. In presenza di disturbi del ciclo o altri sintomi, è opportuno andare anche prima.</p>
+                  <div className="space-y-5 mb-8">
+                    <div className="border-l-4 border-primary/30 pl-5">
+                      <h4 className="font-bold text-foreground mb-2 text-lg">A che età si va dal ginecologo per la prima volta?</h4>
+                      <p className="text-foreground/80 text-base">Si consiglia entro i 21 anni o dopo il primo rapporto sessuale. In caso di dolori forti, anche a 14 anni.</p>
                     </div>
 
-                    <div className="border-l-4 border-primary/30 pl-4">
-                      <h4 className="font-bold text-foreground mb-2">La prima visita ginecologica fa male?</h4>
-                      <p className="text-foreground/80">No, non dovrebbe fare male. Può esserci un leggero fastidio, soprattutto se si è tese, ma non è un'esperienza dolorosa. Rilassarsi e comunicare apertamente con il medico aiuta molto.</p>
+                    <div className="border-l-4 border-primary/30 pl-5">
+                      <h4 className="font-bold text-foreground mb-2 text-lg">Lo speculum fa male?</h4>
+                      <p className="text-foreground/80 text-base">Può causare un leggero fastidio, ma non dolore. Non viene usato se la paziente non ha mai avuto rapporti.</p>
                     </div>
 
-                    <div className="border-l-4 border-primary/30 pl-4">
-                      <h4 className="font-bold text-foreground mb-2">Bisogna essere sessualmente attiva?</h4>
-                      <p className="text-foreground/80">No. La visita ginecologica è indipendente dall'attività sessuale. Si può — e si dovrebbe — andare dal ginecologo anche prima di avere rapporti.</p>
+                    <div className="border-l-4 border-primary/30 pl-5">
+                      <h4 className="font-bold text-foreground mb-2 text-lg">Posso andare dal ginecologo durante il ciclo?</h4>
+                      <p className="text-foreground/80 text-base">Sì per un'ecografia addominale, ma è meglio rimandare per una visita completa o se devi fare il Pap Test (che richiede assenza di sangue).</p>
                     </div>
 
-                    <div className="border-l-4 border-primary/30 pl-4">
-                      <h4 className="font-bold text-foreground mb-2">Posso andare durante il ciclo?</h4>
-                      <p className="text-foreground/80">La visita è preferibile eseguirla lontano dal flusso mestruale. Durante il ciclo è comunque possibile eseguire un'ecografia addominale a vescica piena.</p>
-                    </div>
-
-                    <div className="border-l-4 border-primary/30 pl-4">
-                      <h4 className="font-bold text-foreground mb-2">Devo dire al ginecologo se sono vergine?</h4>
-                      <p className="text-foreground/80">È utile comunicarlo, non per giudizio ma perché permette al medico di adattare la visita — ad esempio evitando lo speculum o preferendo l'ecografia transaddominale.</p>
-                    </div>
-
-                    <div className="border-l-4 border-primary/30 pl-4">
-                      <h4 className="font-bold text-foreground mb-2">Il segreto professionale è garantito?</h4>
-                      <p className="text-foreground/80">Sì. Il medico è vincolato per legge al segreto professionale. Tutto quello che dici rimane riservato, anche se sei minorenne. Puoi parlare liberamente di qualsiasi argomento.</p>
+                    <div className="border-l-4 border-primary/30 pl-5">
+                      <h4 className="font-bold text-foreground mb-2 text-lg">Devo dire al ginecologo se sono vergine?</h4>
+                      <p className="text-foreground/80 text-base">Sì, è fondamentale per permettere al medico di adattare la visita e utilizzare solo l'ecografia transaddominale sulla pancia.</p>
                     </div>
                   </div>
 
-                  <div className="bg-primary/5 p-6 rounded-lg mt-12 text-center">
-                    <p className="text-lg text-foreground/80 mb-4">
-                      Hai ancora dubbi o vuoi prenotare la tua prima visita ginecologica a Palermo?
+                  <h2 className="text-3xl font-bold mb-8 text-foreground mt-12">
+                    Prenota la tua prima visita a Palermo
+                  </h2>
+
+                  <p className="text-lg text-foreground/80 mb-10 leading-relaxed">
+                    Se desideri un ambiente riservato, professionale e senza giudizi, il mio studio è a tua disposizione.
+                  </p>
+
+                  <div className="space-y-5 mb-12">
+                    <div className="flex gap-4">
+                      <div className="mt-1 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                        <MapPin className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="font-bold text-foreground mb-1">Indirizzo</p>
+                        <p className="text-foreground/80">Via Marchese Ugo 56, Palermo</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <div className="mt-1 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                        <Phone className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="font-bold text-foreground mb-1">Telefono</p>
+                        <a href="tel:0915558609" className="text-primary hover:underline">091 555 8609</a>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <div className="mt-1 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                        <Mail className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="font-bold text-foreground mb-1">Prenotazioni</p>
+                        <p className="text-foreground/80">Disponibili online tramite la pagina contatti.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-primary/5 p-8 rounded-lg text-center">
+                    <p className="text-lg text-foreground/80 mb-6">
+                      Pronto a prenotare la tua prima visita?
                     </p>
-                    <Button size="lg" asChild>
-                      <a 
-                        href="https://www.miodottore.it/claudio-rossi/ginecologo/palermo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Prenota una visita
-                      </a>
-                    </Button>
+                    <div className="flex flex-wrap justify-center gap-4">
+                      <Button size="lg" asChild>
+                        <a href="tel:0915558609" className="gap-2">
+                          <Phone className="w-5 h-5" />
+                          Chiama ora
+                        </a>
+                      </Button>
+                      <Button size="lg" variant="outline" asChild>
+                        <a 
+                          href="https://www.miodottore.it/claudio-rossi/ginecologo/palermo"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Prenota online
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
