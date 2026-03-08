@@ -60,6 +60,12 @@ const articles = [
     description: "Pap test, HPV DNA test e colposcopia: percorsi di screening personalizzati per la prevenzione del tumore cervicale.",
     category: "Prevenzione",
   },
+  {
+    slug: "prima-ecografia-gravidanza",
+    title: "Prima Ecografia in Gravidanza: Quando Farla e Cosa Si Vede",
+    description: "Ecografia di datazione, translucenza nucale, tecnologia 3D/4D e calcolatore settimane: guida completa alla prima ecografia ostetrica.",
+    category: "Ostetricia",
+  },
 ];
 
 const Blog = () => (
