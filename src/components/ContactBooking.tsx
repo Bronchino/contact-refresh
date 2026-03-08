@@ -23,10 +23,12 @@ const ContactBooking = () => (
               091 5558609
             </a>
           </InfoRow>
-          <InfoRow icon={<Clock className="w-4 h-4" />} label="Orari">
-            <p className="font-sans text-foreground text-base">Lunedì — Venerdì · 15:00 – 20:00</p>
-            <p className="font-sans text-muted-foreground text-sm mt-0.5">Solo su appuntamento</p>
-          </InfoRow>
+           <InfoRow icon={<Clock className="w-4 h-4" />} label="Orari Segreteria">
+             <p className="font-sans text-foreground text-base">Lunedì — Venerdì · 15:00 – 20:00</p>
+           </InfoRow>
+           <InfoRow icon={<Clock className="w-4 h-4" />} label="Orari Visite">
+             <p className="font-sans text-foreground text-base">Lunedì e Giovedì · 15:00 – 20:00</p>
+           </InfoRow>
           <InfoRow icon={<Mail className="w-4 h-4" />} label="Email">
             <a href="mailto:claudio.rossi@me.com" className="font-sans text-foreground text-base hover:text-primary transition-colors break-all">
               claudio.rossi@me.com
