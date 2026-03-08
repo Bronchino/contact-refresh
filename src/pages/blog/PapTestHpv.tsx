@@ -266,6 +266,9 @@ const PapTestHpv = () => (
               </span>
             </li>
           </ul>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Oggi il vaccino di riferimento nei programmi nazionali è il <strong>Gardasil 9</strong>, che offre la copertura più ampia. Cervarix e Gardasil restano autorizzati e disponibili, ma vengono utilizzati principalmente in contesti specifici o su indicazione del medico.
+          </p>
           <p className="text-muted-foreground leading-relaxed">
             In Italia la vaccinazione gratuita è offerta a ragazze e ragazzi nel 12° anno di vita (chi ha già compiuto 11 anni). La vaccinazione <strong>non sostituisce lo screening</strong>: anche le donne vaccinate devono continuare a sottoporsi regolarmente a Pap test o test HPV.
           </p>
