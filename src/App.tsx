@@ -16,6 +16,8 @@ import ScreeningVsDiagnostic from "./pages/blog/ScreeningVsDiagnostic";
 import StreptococcoB from "./pages/blog/StreptococcoB";
 import GravidanzaExtrauterina from "./pages/blog/GravidanzaExtrauterina";
 import Servizi from "./pages/Servizi";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +42,8 @@ const App = () => (
             <Route path="/blog/screening-vs-diagnostico" element={<ScreeningVsDiagnostic />} />
             <Route path="/blog/streptococco-b" element={<StreptococcoB />} />
             <Route path="/blog/gravidanza-extrauterina" element={<GravidanzaExtrauterina />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
