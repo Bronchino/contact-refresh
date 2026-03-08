@@ -1,17 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BackButton from "@/components/BackButton";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import BlogHero from "@/components/BlogHero";
 import { Button } from "@/components/ui/button";
-import { Home } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ScreeningVsDiagnostic() {
@@ -32,37 +23,16 @@ export default function ScreeningVsDiagnostic() {
 
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
+        <BlogHero
+          label="Ostetricia · Gravidanza"
+          title="Screening e test invasivi in gravidanza: capiamo le differenze"
+          description="Guida chiara su test combinato, NIPT, amniocentesi e villocentesi: differenze, rischi e impatto emotivo."
+          breadcrumbLabel="Screening vs Diagnostico"
+        />
 
         <main className="flex-grow">
           <div className="container mx-auto px-4 py-8 max-w-5xl">
-            <BackButton />
-
-            <Breadcrumb className="mb-6">
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild><Link to="/" className="flex items-center"><Home className="h-4 w-4" /></Link></BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild><Link to="/blog">Blog</Link></BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Screening vs Diagnostico</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-primary text-sm font-medium">
-              <span>Gravidanza</span>
-              <span>•</span>
-              <span>Informazioni per le pazienti</span>
-            </div>
-
             <article className="prose prose-lg dark:prose-invert max-w-none">
-              <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-primary">
-                Screening e test invasivi in gravidanza: capiamo le differenze
-              </h1>
 
               <p className="text-lg leading-relaxed mb-8 text-muted-foreground">
                 In gravidanza è importante distinguere tra test <strong>non invasivi</strong>, che stimano il rischio di

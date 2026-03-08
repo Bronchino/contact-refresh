@@ -3,17 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BackButton from "@/components/BackButton";
+import BlogHero from "@/components/BlogHero";
 import { Helmet } from "react-helmet-async";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Home } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const GravidanzaExtrauterina = () => {
@@ -29,35 +20,15 @@ const GravidanzaExtrauterina = () => {
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
+        <BlogHero
+          label="Ginecologia · Gravidanza"
+          title="Gravidanza Extrauterina: Diagnosi e Trattamenti"
+          description="Informazioni chiare e rassicuranti su gravidanza extrauterina: sintomi, diagnosi e opzioni di trattamento."
+          breadcrumbLabel="Gravidanza Extrauterina"
+        />
       
         <main className="container px-4 py-8 sm:py-12 md:py-16 max-w-4xl mx-auto">
-          <BackButton />
-          <Breadcrumb className="mb-6">
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild><Link to="/" className="flex items-center"><Home className="h-4 w-4" /></Link></BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild><Link to="/blog">Blog</Link></BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Gravidanza Extrauterina</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-
           <article>
-            <header className="mb-8 sm:mb-12">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Gravidanza Extrauterina: Diagnosi e Trattamenti
-              </h1>
-              <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mb-6" />
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                A volte ricevere una diagnosi di gravidanza extrauterina può essere spaventoso. Sono qui per fornirti informazioni chiare e rassicuranti.
-              </p>
-            </header>
 
             <section className="mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">Che cos'è la Gravidanza Extrauterina?</h2>

@@ -1,16 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BackButton from "@/components/BackButton";
+import BlogHero from "@/components/BlogHero";
 import { Button } from "@/components/ui/button";
-import { 
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb";
-import { Users, ClipboardList, Search, Heart, Home } from "lucide-react";
+import { Users, ClipboardList, Search, Heart } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -28,39 +20,16 @@ const Infertilita = () => {
       
       <div className="min-h-screen">
         <Header />
+        <BlogHero
+          label="Fertilità · PMA"
+          title="Infertilità di Coppia"
+          description="Diagnosi, supporto e orientamento nel percorso verso la genitorialità."
+          breadcrumbLabel="Infertilità di Coppia"
+        />
         <main>
-          <section className="py-16 sm:py-20 bg-background animate-fade-in">
+          <section className="py-16 sm:py-20 bg-background">
             <div className="container px-4">
-              <BackButton />
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/" className="flex items-center">
-                        <Home className="h-4 w-4" />
-                      </Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/blog">Blog</Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>Infertilità di Coppia</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-              <div className="max-w-4xl mx-auto mt-6">
-                <h1 className="text-4xl sm:text-5xl font-bold mb-8 text-primary">
-                  Infertilità di Coppia
-                </h1>
-
-                <p className="text-xl text-muted-foreground mb-12">
-                  Diagnosi, supporto e orientamento nel percorso verso la genitorialità
-                </p>
+              <div className="max-w-4xl mx-auto">
 
                 <div className="prose prose-lg max-w-none">
                   <div className="bg-muted/30 p-6 rounded-lg mb-8">

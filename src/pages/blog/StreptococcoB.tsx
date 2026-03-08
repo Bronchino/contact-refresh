@@ -1,16 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BackButton from "@/components/BackButton";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Home } from "lucide-react";
+import BlogHero from "@/components/BlogHero";
 import { Link } from "react-router-dom";
 
 const jsonLd = {
@@ -42,47 +33,14 @@ export default function StreptococcoB() {
 
       <div className="min-h-screen">
         <Header />
+        <BlogHero
+          label="Gravidanza · Prevenzione"
+          title="Streptococco B in gravidanza (GBS): screening e prevenzione"
+          description="Il tampone vaginale-rettale tra la 35ª e la 37ª settimana permette di individuare la colonizzazione da Streptococcus agalactiae e prevenire l'infezione neonatale."
+          breadcrumbLabel="Streptococco B"
+        />
 
         <main>
-          {/* HERO */}
-          <header className="relative isolate overflow-hidden bg-gradient-to-b from-primary/5 to-background">
-            <div className="container px-4 py-12 md:py-16">
-              <BackButton />
-              <Breadcrumb className="mb-6">
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild><Link to="/" className="flex items-center"><Home className="h-4 w-4" /></Link></BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild><Link to="/blog">Blog</Link></BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>Streptococco B</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-
-              <p className="text-sm uppercase tracking-widest text-primary font-semibold">Gravidanza • Prevenzione</p>
-              <h1 className="mt-2 text-3xl md:text-5xl font-bold leading-tight text-foreground">
-                Streptococco B in gravidanza (GBS): screening e prevenzione
-              </h1>
-              <p className="mt-4 md:mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl">
-                Il tampone vaginale-rettale tra la <strong>35ª e la 37ª settimana</strong> permette di individuare la
-                colonizzazione da <em>Streptococcus agalactiae</em> e prevenire l'infezione neonatale.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <a href={bookingUrl} target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-lg bg-primary px-5 py-3 text-primary-foreground shadow-sm hover:bg-primary/90 transition">
-                  Prenota lo screening
-                </a>
-                <a href="#faq" className="inline-flex items-center rounded-lg border border-border px-5 py-3 text-foreground hover:bg-muted transition">
-                  Domande frequenti
-                </a>
-              </div>
-            </div>
-          </header>
 
           {/* CONTENT */}
           <section className="container px-4 py-10 md:py-14">

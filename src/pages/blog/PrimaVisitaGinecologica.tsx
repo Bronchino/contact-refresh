@@ -1,16 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BackButton from "@/components/BackButton";
+import BlogHero from "@/components/BlogHero";
 import { Button } from "@/components/ui/button";
-import { 
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb";
-import { Calendar, Heart, HelpCircle, CheckCircle, Home, Phone, Mail, MapPin } from "lucide-react";
+import { Calendar, Heart, HelpCircle, CheckCircle, Phone, Mail, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -31,43 +23,16 @@ const PrimaVisitaGinecologica = () => {
       
       <div className="min-h-screen">
         <Header />
+        <BlogHero
+          label="Ginecologia · Prevenzione"
+          title="Prima visita ginecologica: tutto quello che devi sapere"
+          description="Guida completa alla prima visita ginecologica a Palermo: quando farla, il Pap Test, come prepararsi e perché non è dolorosa."
+          breadcrumbLabel="Prima Visita Ginecologica"
+        />
         <main>
-          <section className="py-16 sm:py-20 bg-background animate-fade-in">
+          <section className="py-16 sm:py-20 bg-background">
             <div className="container px-4">
-              <BackButton />
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/" className="flex items-center">
-                        <Home className="h-4 w-4" />
-                      </Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/blog">Blog</Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>Prima Visita Ginecologica</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-              <div className="max-w-4xl mx-auto mt-6">
-                <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-primary">
-                  Prima visita ginecologica: tutto quello che devi sapere
-                </h1>
-
-                <p className="text-xl text-muted-foreground mb-8">
-                  La prima visita ginecologica è un momento fondamentale per la salute di ogni donna, eppure è spesso rimandato per timore o imbarazzo. Questa guida nasce per rispondere con chiarezza a tutte le domande che spesso non si ha il coraggio di porre.
-                </p>
-
-                <p className="text-lg text-foreground/80 mb-12 leading-relaxed">
-                  Che tu abbia 16 anni o 35, qui troverai tutto ciò che ti serve sapere per affrontare la tua <strong>visita ginecologica a Palermo</strong> con estrema serenità.
-                </p>
+              <div className="max-w-4xl mx-auto">
 
                 <div className="prose prose-lg max-w-none">
 
