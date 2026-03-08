@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 const PrivacyPolicy = () => (
   <div className="min-h-screen flex flex-col bg-background">
     <Helmet>
-      <title>Privacy Policy | Dott. Claudio Rossi — Ginecologo a Palermo</title>
+      <title>Privacy Policy | Dott. Claudio Rossi Ginecologo Palermo</title>
       <meta name="description" content="Informativa sulla privacy e trattamento dei dati personali dello studio del Dott. Claudio Rossi, ginecologo a Palermo." />
       <meta name="robots" content="noindex, nofollow" />
     </Helmet>

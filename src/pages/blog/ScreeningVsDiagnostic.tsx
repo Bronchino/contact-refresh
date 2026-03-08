@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export default function ScreeningVsDiagnostic() {
-  const title = "Screening e test invasivi in gravidanza: capiamo le differenze | Dr. Claudio Rossi";
+  const title = "Screening vs Test Invasivi in Gravidanza | Dott. Rossi";
   const description =
     "Guida chiara su screening (test combinato, NIPT) e test invasivi (amniocentesi, villocentesi): differenze, quando scegliere l'uno o l'altro, rischi e impatto emotivo.";
 

@@ -73,8 +73,8 @@ const faqs = [
 
 /* ── JSON-LD ── */
 
-const canonical = "https://www.rossiginecologo.it/pap-test-hpv";
-const pageTitle = "Pap Test e HPV DNA Test a Palermo | Prevenzione Tumore Collo dell'Utero — Dott. Claudio Rossi";
+const canonical = "https://www.rossiginecologo.it/blog/pap-test-hpv";
+const pageTitle = "Pap Test e HPV Test Palermo | Dott. Claudio Rossi";
 const pageDescription = "Pap test, HPV DNA test e colposcopia a Palermo. Il Dott. Claudio Rossi, ginecologo, offre percorsi di screening personalizzati per la prevenzione del tumore del collo dell'utero.";
 
 const jsonLdGraph = {

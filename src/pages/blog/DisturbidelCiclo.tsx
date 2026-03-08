@@ -158,7 +158,7 @@ const medicalPageSchema = {
 const DisturbidelCiclo = () => (
   <>
     <Helmet>
-      <title>Disturbi del Ciclo Mestruale: Quando Consultare un Ginecologo | Dott. Claudio Rossi</title>
+      <title>Disturbi del Ciclo Mestruale | Dott. Claudio Rossi</title>
       <meta
         name="description"
         content="Amenorrea, dismenorrea, menorragia, ciclo irregolare e SPM: cause, diagnosi e trattamenti. Ginecologo a Palermo – Dott. Claudio Rossi."

@@ -7,7 +7,7 @@ import { GraduationCap, Stethoscope, Baby, BookOpen, Heart, Scan } from "lucide-
 const ChiSono = () => (
   <div className="min-h-screen bg-background">
     <Helmet>
-      <title>Chi Sono | Dott. Claudio Rossi — Ginecologo Palermo</title>
+      <title>Chi Sono | Dott. Claudio Rossi Ginecologo Palermo</title>
       <meta name="description" content="Dott. Claudio Rossi, ginecologo a Palermo con oltre 25 anni di esperienza. Dirigente Medico presso Villa Sofia-Cervello. Chirurgia laparoscopica e robotica." />
       <link rel="canonical" href="https://www.rossiginecologo.it/chi-sono" />
     </Helmet>
