@@ -54,6 +54,12 @@ const articles = [
     description: "Amenorrea, dismenorrea, menorragia, ciclo irregolare e SPM: cause, diagnosi e trattamenti personalizzati.",
     category: "Ginecologia",
   },
+  {
+    slug: "pap-test-hpv",
+    title: "Pap Test e HPV DNA Test: Prevenzione del Tumore del Collo dell'Utero",
+    description: "Pap test, HPV DNA test e colposcopia: percorsi di screening personalizzati per la prevenzione del tumore cervicale.",
+    category: "Prevenzione",
+  },
 ];
 
 const Blog = () => (

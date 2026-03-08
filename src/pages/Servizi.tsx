@@ -154,7 +154,7 @@ const gynecologyServices: ServiceCard[] = [
     icon: <TestTube className="w-7 h-7" />,
     title: "Pap test e HPV test",
     description: "Esami di screening per la prevenzione del tumore del collo dell'utero, raccomandati ogni 3–5 anni",
-    link: "#",
+    link: "/blog/pap-test-hpv",
   },
   {
     icon: <Droplets className="w-7 h-7" />,
