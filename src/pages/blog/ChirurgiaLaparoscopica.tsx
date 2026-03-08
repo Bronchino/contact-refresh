@@ -1,17 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BackButton from "@/components/BackButton";
+import BlogHero from "@/components/BlogHero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb";
-import { Home } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ChirurgiaLaparoscopica = () => {
