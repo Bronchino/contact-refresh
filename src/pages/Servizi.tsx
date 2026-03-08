@@ -112,7 +112,7 @@ const gynecologyServices: ServiceCard[] = [
     icon: <Thermometer className="w-7 h-7" />,
     title: "Disturbi del ciclo mestruale",
     description: "Valutazione e trattamento di amenorrea, dismenorrea, cicli irregolari e sanguinamenti anomali a Palermo",
-    link: "#",
+    link: "/blog/disturbi-ciclo-mestruale",
   },
   {
     icon: <CircleDot className="w-7 h-7" />,
