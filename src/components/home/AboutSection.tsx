@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
-import { User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import dottImg from "@/assets/dott-rossi-about.jpg";
 
 const AboutSection = () => (
   <section className="bg-primary py-20 sm:py-28">
     <div className="max-w-6xl mx-auto px-6 sm:px-8">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        {/* Left: placeholder image */}
-        <div className="bg-hero-deep aspect-square rounded-2xl flex items-center justify-center">
-          <User className="w-20 h-20 text-primary-foreground/40" />
+        {/* Left: image */}
+        <div className="rounded-2xl overflow-hidden shadow-xl">
+          <img
+            src={dottImg}
+            alt="Dott. Claudio Rossi"
+            className="w-full h-auto object-cover aspect-square"
+            loading="lazy"
+          />
         </div>
 
         {/* Right: text */}
