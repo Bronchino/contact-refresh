@@ -64,6 +64,7 @@ const Footer = () => (
       <div className="border-t border-background/10 mt-10 pt-6 text-center text-xs text-background/50">
         <p>© {new Date().getFullYear()} Dott. Claudio Rossi — Tutti i diritti riservati</p>
         <p className="mt-1">Contenuti a scopo informativo e non sostitutivi del parere medico.</p>
+        <p className="mt-1">P.IVA 06746840823 — Iscritto all'Ordine dei Medici di Palermo n. 11575</p>
         <div className="mt-3 flex items-center justify-center gap-4">
           <Link to="/privacy-policy" className="hover:text-background transition-colors">Privacy Policy</Link>
           <span className="text-background/30">|</span>
