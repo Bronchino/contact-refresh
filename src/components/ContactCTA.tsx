@@ -23,12 +23,12 @@ const ContactCTA = () => (
             Chiama 091 5558609
           </a>
         </Button>
-        <Button variant="heroOutline" size="lg" asChild>
-          <a href="https://www.miodottore.it/z/gvmuor" target="_blank" rel="noopener noreferrer" className="gap-2">
-            Prenota Online
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </Button>
+         <Button variant="heroOutline" size="lg" asChild>
+           <a href="https://www.miodottore.it/claudio-rossi/ginecologo/palermo" target="_blank" rel="noopener noreferrer" className="gap-2">
+             Prenota Online
+             <ArrowRight className="w-4 h-4" />
+           </a>
+         </Button>
       </div>
     </div>
   </section>

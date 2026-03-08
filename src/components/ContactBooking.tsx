@@ -52,17 +52,17 @@ const ContactBooking = () => (
               WhatsApp
             </a>
           </Button>
-          <Button variant="pillOutline" asChild>
-            <a
-              href="https://www.miodottore.it/z/gvmuor"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gap-2"
-            >
-              <CalendarDays className="w-4 h-4" />
-              MioDottore
-            </a>
-          </Button>
+           <Button variant="pillOutline" asChild>
+             <a
+               href="https://www.miodottore.it/claudio-rossi/ginecologo/palermo"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="gap-2"
+             >
+               <CalendarDays className="w-4 h-4" />
+               MioDottore
+             </a>
+           </Button>
         </div>
       </div>
 
