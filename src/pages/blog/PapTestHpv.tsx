@@ -319,6 +319,87 @@ const PapTestHpv = () => (
         </div>
       </section>
 
+      {/* ThinPrep Section */}
+      <section className="py-16 sm:py-24 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8">
+          <h2 className="font-serif text-2xl sm:text-3xl text-foreground mb-6">
+            Pap Test, ThinPrep e HPV Test: cosa cambia nel prelievo?
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-10">
+            Scegliere tra Pap Test convenzionale, ThinPrep e HPV Test può generare confusione. Tutti e tre prevedono il prelievo di cellule dalla cervice uterina, ma differiscono nel metodo di raccolta e soprattutto in cosa si cerca nel campione.
+          </p>
+
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3 mb-12">
+            <div className="rounded-xl border border-border bg-background p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Microscope className="w-6 h-6 text-primary flex-shrink-0" aria-hidden="true" />
+                <h3 className="font-serif text-lg font-semibold text-foreground">Pap Test convenzionale</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Il prelievo viene effettuato con una spatola per raccogliere le cellule dalla superficie esterna del collo dell'utero e un citobrush (spazzolino) per prelevare cellule dal canale cervicale interno. Il campione viene "strisciato" su un vetrino, fissato e inviato al laboratorio per l'analisi al microscopio.
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <ClipboardList className="w-6 h-6 text-primary flex-shrink-0" aria-hidden="true" />
+                <h3 className="font-serif text-lg font-semibold text-foreground">ThinPrep (Pap Test in fase liquida)</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                È un'evoluzione del Pap Test convenzionale. Il prelievo avviene con un'unica spazzolina progettata per raccogliere contemporaneamente cellule dalla superficie esterna e dal canale cervicale. La differenza fondamentale sta nel passaggio successivo: la spazzolina viene immersa in un liquido di conservazione invece di essere strisciata su un vetrino. Questo consente una lettura più chiara al microscopio e riduce significativamente la possibilità di errori legati alla qualità del campione.
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-border bg-background p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <FileSearch className="w-6 h-6 text-primary flex-shrink-0" aria-hidden="true" />
+                <h3 className="font-serif text-lg font-semibold text-foreground">HPV Test</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                La modalità di prelievo è identica a quella del ThinPrep: stessa spazzolina, stesso liquido di conservazione. In alcuni casi può essere prelevato con un tampone a secco. La differenza è nell'analisi: il campione non viene esaminato per cercare cellule anomale, ma per individuare il DNA del Papillomavirus, distinguendo tra ceppi ad alto e basso rischio oncogeno.
+              </p>
+            </div>
+          </div>
+
+          <h3 className="font-serif text-xl text-foreground mb-4">La differenza che conta: specificità vs sensibilità</h3>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            La distinzione principale non riguarda il prelievo, ma cosa si cerca nel campione:
+          </p>
+
+          <div className="overflow-x-auto rounded-xl border border-border mb-10">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-muted/50">
+                  <th className="text-left p-4 font-semibold text-foreground">Esame</th>
+                  <th className="text-left p-4 font-semibold text-foreground">Tipo di analisi</th>
+                  <th className="text-left p-4 font-semibold text-foreground">Punto di forza</th>
+                  <th className="text-left p-4 font-semibold text-foreground">Limite</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-background">
+                  <td className="p-4 font-medium text-foreground">Pap Test / ThinPrep</td>
+                  <td className="p-4 text-muted-foreground">Citologica (analisi delle cellule)</td>
+                  <td className="p-4 text-muted-foreground">Alta specificità — pochi falsi positivi</td>
+                  <td className="p-4 text-muted-foreground">Sensibilità moderata — possibili falsi negativi</td>
+                </tr>
+                <tr className="bg-muted/20">
+                  <td className="p-4 font-medium text-foreground">HPV Test</td>
+                  <td className="p-4 text-muted-foreground">Molecolare (ricerca del DNA virale)</td>
+                  <td className="p-4 text-muted-foreground">Alta sensibilità — individua il virus anche in fase precoce</td>
+                  <td className="p-4 text-muted-foreground">Specificità minore — rileva anche infezioni transitorie destinate a risolversi</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="font-serif text-xl text-foreground mb-4">Quale test scegliere?</h3>
+          <p className="text-muted-foreground leading-relaxed">
+            La scelta non è arbitraria e va condivisa con il proprio ginecologo, che valuterà l'età, la storia clinica e i precedenti esami. In alcuni casi — soprattutto nel follow-up di pazienti con pregressi di lesioni — si può optare per il co-testing: l'esecuzione contemporanea di Pap Test e HPV Test sullo stesso campione. È l'approccio più accurato disponibile, ma non è raccomandato in modo routinario per tutta la popolazione.
+          </p>
+        </div>
+      </section>
+
       {/* Perché non rimandare */}
       <section className="py-16 sm:py-24 bg-muted/30">
         <div className="max-w-4xl mx-auto px-6 sm:px-8">
