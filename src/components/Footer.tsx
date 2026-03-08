@@ -74,6 +74,11 @@ const Footer = () => (
           <span className="text-background/30">|</span>
           <Link to="/cookie-policy" className="hover:text-background transition-colors">Cookie Policy</Link>
         </div>
+        <div className="mt-3 flex items-center justify-center gap-4">
+          <a href="https://www.miodottore.it/claudio-rossi/ginecologo/palermo" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">MioDottore</a>
+          <span className="text-background/30">|</span>
+          <a href="https://www.ordinemedicipalermo.org" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">Ordine dei Medici di Palermo</a>
+        </div>
       </div>
     </div>
   </footer>
