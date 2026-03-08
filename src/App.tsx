@@ -9,6 +9,7 @@ import ChiSono from "./pages/ChiSono";
 import Blog from "./pages/Blog";
 import ChirurgiaLaparoscopica from "./pages/blog/ChirurgiaLaparoscopica";
 import Infertilita from "./pages/blog/Infertilita";
+import PrimaVisitaGinecologica from "./pages/blog/PrimaVisitaGinecologica";
 import ScreeningPrenatale from "./pages/blog/ScreeningPrenatale";
 import ScreeningVsDiagnostic from "./pages/blog/ScreeningVsDiagnostic";
 import StreptococcoB from "./pages/blog/StreptococcoB";
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/chirurgia-laparoscopica" element={<ChirurgiaLaparoscopica />} />
             <Route path="/blog/infertilita" element={<Infertilita />} />
+            <Route path="/blog/prima-visita-ginecologica" element={<PrimaVisitaGinecologica />} />
             <Route path="/blog/screening-prenatale" element={<ScreeningPrenatale />} />
             <Route path="/blog/screening-vs-diagnostico" element={<ScreeningVsDiagnostic />} />
             <Route path="/blog/streptococco-b" element={<StreptococcoB />} />

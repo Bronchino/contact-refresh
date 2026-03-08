@@ -13,6 +13,12 @@ const articles = [
     category: "Ginecologia",
   },
   {
+    slug: "prima-visita-ginecologica",
+    title: "Prima Visita Ginecologica: Cosa Aspettarsi e Come Prepararsi",
+    description: "Guida completa alla prima visita ginecologica: quando farla, il Pap Test, come prepararsi e perché non è dolorosa.",
+    category: "Prevenzione",
+  },
+  {
     slug: "screening-prenatale",
     title: "Screening Prenatale: Test Combinato FMF e DNA Fetale (NIPT)",
     description: "Come orientarsi tra gli screening prenatali del primo trimestre: confronto, affidabilità e accreditamento FMF.",
