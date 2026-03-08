@@ -26,6 +26,14 @@ import {
 
 const faqs = [
   {
+    q: "Cos'è il ThinPrep e in cosa si differenzia dal Pap test convenzionale?",
+    a: "Il ThinPrep è un'evoluzione del Pap test tradizionale. Il prelievo avviene con un'unica spazzolina che raccoglie cellule sia dalla superficie esterna che dal canale cervicale, immergendola poi in un liquido di conservazione invece di strisciare il campione su un vetrino. Questo metodo garantisce una qualità del campione superiore, una lettura più chiara al microscopio e una riduzione degli errori. Il risultato diagnostico è equivalente al Pap test convenzionale, ma con minor rischio di campioni non adeguati.",
+  },
+  {
+    q: "Cos'è il co-testing e a chi è indicato?",
+    a: "Il co-testing consiste nell'eseguire contemporaneamente il Pap test e l'HPV test sullo stesso campione, combinando l'alta specificità del primo con l'alta sensibilità del secondo. È l'approccio diagnostico più accurato disponibile, ma non è raccomandato in modo routinario per tutta la popolazione. Viene utilizzato principalmente nel follow-up di pazienti con pregressi di lesioni cervicali o in situazioni cliniche particolari valutate dal ginecologo.",
+  },
+  {
     q: "A che età si inizia a fare il Pap test?",
     a: "In Italia il programma di screening pubblico inizia a 25 anni. Prima di questa età, in assenza di sintomi o situazioni particolari, lo screening non è raccomandato dalle linee guida nazionali. Tuttavia, donne che hanno avuto il primo rapporto in giovane età o con fattori di rischio specifici possono valutare con il proprio ginecologo un controllo anticipato.",
   },
