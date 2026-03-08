@@ -48,6 +48,12 @@ const articles = [
     description: "Sintomi, diagnosi, trattamento con Methotrexate e chirurgia laparoscopica. Informazioni chiare e rassicuranti.",
     category: "Ginecologia",
   },
+  {
+    slug: "disturbi-ciclo-mestruale",
+    title: "Disturbi del Ciclo Mestruale: Quando Consultare un Ginecologo",
+    description: "Amenorrea, dismenorrea, menorragia, ciclo irregolare e SPM: cause, diagnosi e trattamenti personalizzati.",
+    category: "Ginecologia",
+  },
 ];
 
 const Blog = () => (
