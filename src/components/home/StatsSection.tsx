@@ -10,7 +10,7 @@ const StatsSection = () => (
     <div className="max-w-6xl mx-auto px-6 sm:px-8">
       <div className="text-center mb-14">
         <h2 className="font-serif text-3xl sm:text-4xl text-foreground mb-4">
-          Perché sceglierci
+          Perché scegliermi
         </h2>
         <p className="font-sans text-muted-foreground max-w-2xl mx-auto">
           Competenza, tecnologia e attenzione al paziente al centro di ogni visita.
