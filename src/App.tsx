@@ -15,6 +15,7 @@ import ScreeningPrenatale from "./pages/blog/ScreeningPrenatale";
 import ScreeningVsDiagnostic from "./pages/blog/ScreeningVsDiagnostic";
 import StreptococcoB from "./pages/blog/StreptococcoB";
 import GravidanzaExtrauterina from "./pages/blog/GravidanzaExtrauterina";
+import DisturbidelCiclo from "./pages/blog/DisturbidelCiclo";
 import Servizi from "./pages/Servizi";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
