@@ -92,7 +92,7 @@ const ChiSono = () => (
             },
             {
               title: "Chirurgia robotica Da Vinci",
-              desc: "Tecnica mininvasiva di ultima generazione per la quale ho ricevuto una formazione avanzata "one-to-one" presso l'Università di Milano-Bicocca.",
+              desc: 'Tecnica mininvasiva di ultima generazione per la quale ho ricevuto una formazione avanzata "one-to-one" presso l\'Università di Milano-Bicocca.',
             },
             {
               title: "Chirurgia isteroscopica",
