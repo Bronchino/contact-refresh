@@ -3,15 +3,8 @@ import Footer from "@/components/Footer";
 import BackButton from "@/components/BackButton";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
-import { 
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb";
-import { Calendar, Home } from "lucide-react";
+import BlogHero from "@/components/BlogHero";
+import { Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ScreeningPrenatale = () => {
