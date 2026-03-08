@@ -23,9 +23,9 @@ export default function StreptococcoB() {
   return (
     <>
       <Helmet>
-        <title>Streptococco B in gravidanza | Screening 35–37 settimane – Dott. Claudio Rossi</title>
-        <meta name="description" content="Tampone vaginale-rettale per Streptococco beta-emolitico (GBS) tra 35ª–37ª settimana: indicazioni, come si fa, cosa significa positivo/negativo e profilassi in travaglio." />
-        <link rel="canonical" href="https://www.rossiginecologo.it/streptococco-b" />
+        <title>Streptococco B in Gravidanza | Dott. Claudio Rossi</title>
+        <meta name="description" content="Tampone vaginale-rettale per Streptococco B (GBS) tra 35ª–37ª settimana: indicazioni, come si fa, risultati e profilassi in travaglio." />
+        <link rel="canonical" href="https://www.rossiginecologo.it/blog/streptococco-b" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Streptococco B in gravidanza – screening" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>

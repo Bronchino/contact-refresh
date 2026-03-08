@@ -9,9 +9,9 @@ const ChirurgiaLaparoscopica = () => {
   return (
     <>
       <Helmet>
-        <title>Chirurgia laparoscopica e robotica con Sistema Da Vinci Xi | Ginecologia mini-invasiva</title>
-        <meta name="description" content="Chirurgia laparoscopica e robotica con Sistema Da Vinci Xi in ginecologia: indicazioni (endometriosi, cisti ovariche, dermoidi, fibromi), vantaggi rispetto alla laparotomia, differenze tra laparoscopia e robotica. Recupero rapido e massima precisione." />
-        <link rel="canonical" href="https://www.rossiginecologo.it/chirurgia-laparoscopica" />
+        <title>Chirurgia Laparoscopica e Robotica Da Vinci | Dott. Rossi</title>
+        <meta name="description" content="Chirurgia laparoscopica e robotica Da Vinci Xi in ginecologia: endometriosi, cisti ovariche, fibromi. Vantaggi, recupero rapido e massima precisione." />
+        <link rel="canonical" href="https://www.rossiginecologo.it/blog/chirurgia-laparoscopica" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Chirurgia laparoscopica e robotica con Sistema Da Vinci Xi" />
         <meta property="og:description" content="Vantaggi, indicazioni e differenze: perché scegliere la chirurgia robotica e laparoscopica in ginecologia." />

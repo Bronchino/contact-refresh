@@ -10,10 +10,10 @@ const Infertilita = () => {
   return (
     <>
       <Helmet>
-        <title>Infertilità di Coppia Palermo | Dott. Claudio Rossi | FIVET, ICSI, PMA</title>
-        <meta name="description" content="Affronto casi di infertilità attraverso esami mirati e strategie personalizzate. Scopri come posso aiutarti e prenota una consulenza" />
-        <link rel="canonical" href="https://www.rossiginecologo.it/infertilita" />
-        <meta property="og:type" content="website" />
+        <title>Infertilità di Coppia Palermo | Dott. Claudio Rossi</title>
+        <meta name="description" content="Infertilità di coppia: esami mirati, FIVET, ICSI e PMA. Strategie personalizzate dal Dott. Claudio Rossi a Palermo." />
+        <link rel="canonical" href="https://www.rossiginecologo.it/blog/infertilita" />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content="Infertilità di Coppia Palermo | Diagnosi e Trattamento PMA" />
         <meta property="og:description" content="Affronto casi di infertilità attraverso esami mirati e strategie personalizzate." />
       </Helmet>

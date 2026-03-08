@@ -65,8 +65,9 @@ const articles = [
 const Blog = () => (
   <div className="min-h-screen bg-background">
     <Helmet>
-      <title>Blog | Dott. Claudio Rossi — Ginecologo a Palermo</title>
+      <title>Blog Ginecologia Palermo | Dott. Claudio Rossi</title>
       <meta name="description" content="Articoli informativi su ginecologia, ostetricia, chirurgia mini-invasiva, screening prenatale, infertilità e PMA a cura del Dott. Claudio Rossi." />
+      <link rel="canonical" href="https://www.rossiginecologo.it/blog" />
     </Helmet>
 
     <Header />

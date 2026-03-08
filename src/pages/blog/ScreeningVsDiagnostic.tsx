@@ -15,7 +15,7 @@ export default function ScreeningVsDiagnostic() {
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href="https://www.rossiginecologo.it/screening-vs-diagnostico" />
+        <link rel="canonical" href="https://www.rossiginecologo.it/blog/screening-vs-diagnostico" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="article" />

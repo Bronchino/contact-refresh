@@ -230,13 +230,10 @@ const Servizi = () => {
           name="description"
           content="Tutti i servizi di ginecologia e ostetricia del Dott. Claudio Rossi a Palermo: visite, ecografie, screening prenatale, chirurgia laparoscopica, fertilità e prevenzione."
         />
-        <link rel="canonical" href="https://www.dottorossi.it/servizi" />
+        <link rel="canonical" href="https://www.rossiginecologo.it/servizi" />
         <meta property="og:title" content="Servizi di Ginecologia e Ostetricia a Palermo | Dott. Claudio Rossi" />
-        <meta
-          property="og:description"
-          content="Tutti i servizi di ginecologia e ostetricia del Dott. Claudio Rossi a Palermo: visite, ecografie, screening prenatale, chirurgia laparoscopica, fertilità e prevenzione."
-        />
-        <meta property="og:url" content="https://www.dottorossi.it/servizi" />
+        <meta property="og:description" content="Tutti i servizi di ginecologia e ostetricia del Dott. Claudio Rossi a Palermo: visite, ecografie, screening prenatale, chirurgia laparoscopica, fertilità e prevenzione." />
+        <meta property="og:url" content="https://www.rossiginecologo.it/servizi" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>

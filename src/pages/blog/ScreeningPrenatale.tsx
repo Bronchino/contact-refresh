@@ -45,9 +45,9 @@ const ScreeningPrenatale = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Screening Prenatale Palermo | Test Combinato FMF e DNA Fetale (NIPT) | Dott. Claudio Rossi</title>
-        <meta name="description" content="Screening prenatale non invasivo a Palermo: Test Combinato del primo trimestre con accreditamento FMF e Test del DNA fetale (NIPT) per la diagnosi precoce di trisomia 21, 18 e 13." />
-        <link rel="canonical" href="https://www.rossiginecologo.it/screening-prenatale" />
+        <title>Screening Prenatale Palermo | Test Combinato e NIPT</title>
+        <meta name="description" content="Screening prenatale non invasivo a Palermo: Test Combinato FMF e DNA fetale (NIPT) per la diagnosi precoce di trisomia 21, 18 e 13. Dott. Claudio Rossi." />
+        <link rel="canonical" href="https://www.rossiginecologo.it/blog/screening-prenatale" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Screening Prenatale: Test Combinato FMF vs DNA Fetale (NIPT)" />
         <meta property="og:description" content="Guida completa allo screening prenatale: differenze, affidabilità e quando scegliere il test combinato o il DNA fetale." />
