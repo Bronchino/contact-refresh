@@ -26,6 +26,14 @@ import {
 
 const faqs = [
   {
+    q: "Cos'è il ThinPrep e in cosa si differenzia dal Pap test convenzionale?",
+    a: "Il ThinPrep è un'evoluzione del Pap test tradizionale. Il prelievo avviene con un'unica spazzolina che raccoglie cellule sia dalla superficie esterna che dal canale cervicale, immergendola poi in un liquido di conservazione invece di strisciare il campione su un vetrino. Questo metodo garantisce una qualità del campione superiore, una lettura più chiara al microscopio e una riduzione degli errori. Il risultato diagnostico è equivalente al Pap test convenzionale, ma con minor rischio di campioni non adeguati.",
+  },
+  {
+    q: "Cos'è il co-testing e a chi è indicato?",
+    a: "Il co-testing consiste nell'eseguire contemporaneamente il Pap test e l'HPV test sullo stesso campione, combinando l'alta specificità del primo con l'alta sensibilità del secondo. È l'approccio diagnostico più accurato disponibile, ma non è raccomandato in modo routinario per tutta la popolazione. Viene utilizzato principalmente nel follow-up di pazienti con pregressi di lesioni cervicali o in situazioni cliniche particolari valutate dal ginecologo.",
+  },
+  {
     q: "A che età si inizia a fare il Pap test?",
     a: "In Italia il programma di screening pubblico inizia a 25 anni. Prima di questa età, in assenza di sintomi o situazioni particolari, lo screening non è raccomandato dalle linee guida nazionali. Tuttavia, donne che hanno avuto il primo rapporto in giovane età o con fattori di rischio specifici possono valutare con il proprio ginecologo un controllo anticipato.",
   },
@@ -308,6 +316,87 @@ const PapTestHpv = () => (
               <strong>Nota del ginecologo:</strong> i due test vengono spesso eseguiti insieme — il cosiddetto <strong>co-testing</strong> — per ottenere un quadro diagnostico ancora più completo e sicuro. È una scelta particolarmente utile in donne con fattori di rischio specifici o che richiedono una valutazione più approfondita.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ThinPrep Section */}
+      <section className="py-16 sm:py-24 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8">
+          <h2 className="font-serif text-2xl sm:text-3xl text-foreground mb-6">
+            Pap Test, ThinPrep e HPV Test: cosa cambia nel prelievo?
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-10">
+            Scegliere tra Pap Test convenzionale, ThinPrep e HPV Test può generare confusione. Tutti e tre prevedono il prelievo di cellule dalla cervice uterina, ma differiscono nel metodo di raccolta e soprattutto in cosa si cerca nel campione.
+          </p>
+
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3 mb-12">
+            <div className="rounded-xl border border-border bg-background p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Microscope className="w-6 h-6 text-primary flex-shrink-0" aria-hidden="true" />
+                <h3 className="font-serif text-lg font-semibold text-foreground">Pap Test convenzionale</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Il prelievo viene effettuato con una spatola per raccogliere le cellule dalla superficie esterna del collo dell'utero e un citobrush (spazzolino) per prelevare cellule dal canale cervicale interno. Il campione viene "strisciato" su un vetrino, fissato e inviato al laboratorio per l'analisi al microscopio.
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <ClipboardList className="w-6 h-6 text-primary flex-shrink-0" aria-hidden="true" />
+                <h3 className="font-serif text-lg font-semibold text-foreground">ThinPrep (Pap Test in fase liquida)</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                È un'evoluzione del Pap Test convenzionale. Il prelievo avviene con un'unica spazzolina progettata per raccogliere contemporaneamente cellule dalla superficie esterna e dal canale cervicale. La differenza fondamentale sta nel passaggio successivo: la spazzolina viene immersa in un liquido di conservazione invece di essere strisciata su un vetrino. Questo consente una lettura più chiara al microscopio e riduce significativamente la possibilità di errori legati alla qualità del campione.
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-border bg-background p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <FileSearch className="w-6 h-6 text-primary flex-shrink-0" aria-hidden="true" />
+                <h3 className="font-serif text-lg font-semibold text-foreground">HPV Test</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                La modalità di prelievo è identica a quella del ThinPrep: stessa spazzolina, stesso liquido di conservazione. In alcuni casi può essere prelevato con un tampone a secco. La differenza è nell'analisi: il campione non viene esaminato per cercare cellule anomale, ma per individuare il DNA del Papillomavirus, distinguendo tra ceppi ad alto e basso rischio oncogeno.
+              </p>
+            </div>
+          </div>
+
+          <h3 className="font-serif text-xl text-foreground mb-4">La differenza che conta: specificità vs sensibilità</h3>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            La distinzione principale non riguarda il prelievo, ma cosa si cerca nel campione:
+          </p>
+
+          <div className="overflow-x-auto rounded-xl border border-border mb-10">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-muted/50">
+                  <th className="text-left p-4 font-semibold text-foreground">Esame</th>
+                  <th className="text-left p-4 font-semibold text-foreground">Tipo di analisi</th>
+                  <th className="text-left p-4 font-semibold text-foreground">Punto di forza</th>
+                  <th className="text-left p-4 font-semibold text-foreground">Limite</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-background">
+                  <td className="p-4 font-medium text-foreground">Pap Test / ThinPrep</td>
+                  <td className="p-4 text-muted-foreground">Citologica (analisi delle cellule)</td>
+                  <td className="p-4 text-muted-foreground">Alta specificità — pochi falsi positivi</td>
+                  <td className="p-4 text-muted-foreground">Sensibilità moderata — possibili falsi negativi</td>
+                </tr>
+                <tr className="bg-muted/20">
+                  <td className="p-4 font-medium text-foreground">HPV Test</td>
+                  <td className="p-4 text-muted-foreground">Molecolare (ricerca del DNA virale)</td>
+                  <td className="p-4 text-muted-foreground">Alta sensibilità — individua il virus anche in fase precoce</td>
+                  <td className="p-4 text-muted-foreground">Specificità minore — rileva anche infezioni transitorie destinate a risolversi</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="font-serif text-xl text-foreground mb-4">Quale test scegliere?</h3>
+          <p className="text-muted-foreground leading-relaxed">
+            La scelta non è arbitraria e va condivisa con il proprio ginecologo, che valuterà l'età, la storia clinica e i precedenti esami. In alcuni casi — soprattutto nel follow-up di pazienti con pregressi di lesioni — si può optare per il co-testing: l'esecuzione contemporanea di Pap Test e HPV Test sullo stesso campione. È l'approccio più accurato disponibile, ma non è raccomandato in modo routinario per tutta la popolazione.
+          </p>
         </div>
       </section>
 
