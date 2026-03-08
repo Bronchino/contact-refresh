@@ -19,11 +19,14 @@ const PrimaEcografia = () => {
 
   const sevenWeeksDate = lmpDate ? addWeeks(lmpDate, 7) : null;
   const elevenWeeksDate = lmpDate ? addWeeks(lmpDate, 11) : null;
+  const dueDate = lmpDate ? addWeeks(lmpDate, 40) : null;
   const today = new Date();
 
-  const weeksPregnant = lmpDate
-    ? Math.floor((today.getTime() - lmpDate.getTime()) / (7 * 24 * 60 * 60 * 1000))
+  const totalDays = lmpDate
+    ? Math.floor((today.getTime() - lmpDate.getTime()) / (24 * 60 * 60 * 1000))
     : null;
+  const weeksPregnant = totalDays !== null ? Math.floor(totalDays / 7) : null;
+  const daysRemainder = totalDays !== null ? totalDays % 7 : null;
 
   const canBookNow = sevenWeeksDate && (isAfter(today, sevenWeeksDate) || today.toDateString() === sevenWeeksDate.toDateString());
   const isPastWindow = elevenWeeksDate && isAfter(today, elevenWeeksDate);
