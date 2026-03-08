@@ -10,7 +10,7 @@ const PrimaVisitaGinecologica = () => {
   return (
     <>
       <Helmet>
-        <title>Prima Visita Ginecologica: Cosa Aspettarsi e Come Prepararsi | Dott. Rossi Palermo</title>
+        <title>Prima Visita Ginecologica | Dott. Rossi Palermo</title>
         <meta name="description" content="Guida completa alla prima visita ginecologica a Palermo: quando farla, il Pap Test, come prepararsi e perché non è dolorosa. Consigli del Dott. Claudio Rossi." />
         <link rel="canonical" href="https://www.rossiginecologo.it/blog/prima-visita-ginecologica" />
         <meta property="og:type" content="website" />

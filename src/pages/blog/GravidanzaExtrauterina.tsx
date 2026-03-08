@@ -11,7 +11,7 @@ const GravidanzaExtrauterina = () => {
   return (
     <>
       <Helmet>
-        <title>Gravidanza Extrauterina | Diagnosi e Cura | Dott. Rossi</title>
+        <title>Gravidanza Extrauterina | Dott. Claudio Rossi Palermo</title>
         <meta name="description" content="Gravidanza extrauterina (ectopica): sintomi, diagnosi, trattamento con Methotrexate e chirurgia laparoscopica. Dott. Claudio Rossi, Palermo." />
         <link rel="canonical" href="https://www.rossiginecologo.it/blog/gravidanza-extrauterina" />
         <meta property="og:type" content="article" />

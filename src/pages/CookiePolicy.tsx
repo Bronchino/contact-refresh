@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 const CookiePolicy = () => (
   <div className="min-h-screen flex flex-col bg-background">
     <Helmet>
-      <title>Cookie Policy | Dott. Claudio Rossi — Ginecologo a Palermo</title>
+      <title>Cookie Policy | Dott. Claudio Rossi Ginecologo Palermo</title>
       <meta name="description" content="Informativa sull'utilizzo dei cookie sul sito del Dott. Claudio Rossi, ginecologo a Palermo." />
       <meta name="robots" content="noindex, nofollow" />
     </Helmet>
