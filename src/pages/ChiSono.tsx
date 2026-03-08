@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import ContactCTA from "@/components/ContactCTA";
 import { GraduationCap, Stethoscope, Baby, BookOpen, Heart, Scan } from "lucide-react";
