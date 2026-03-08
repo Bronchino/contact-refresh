@@ -1,10 +1,11 @@
 import { Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import consultoImg from "@/assets/dott-rossi-consulto.jpg";
 
 const HeroSection = () => (
   <section className="relative min-h-[90vh] grid lg:grid-cols-2">
     {/* Left column */}
-    <div className="bg-primary flex items-center">
+    <div className="relative z-10 bg-primary flex items-center">
       <div className="px-8 sm:px-12 lg:px-16 xl:px-20 py-20 lg:py-0 max-w-2xl">
         <p className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-accent mb-8">
           Ginecologo privato · Palermo
@@ -48,11 +49,21 @@ const HeroSection = () => (
       </div>
     </div>
 
-    {/* Right column */}
-    <div className="hidden lg:flex bg-hero-deep items-center justify-center p-12">
-      <div className="w-full max-w-md aspect-[4/5] bg-primary rounded-2xl flex items-center justify-center">
-        <span className="font-sans text-primary-foreground/60 text-lg">Foto Dottore</span>
-      </div>
+    {/* Right column — photo with left gradient */}
+    <div className="hidden lg:block relative">
+      <img
+        src={consultoImg}
+        alt="Dott. Claudio Rossi durante un consulto con una paziente nello studio di Palermo"
+        className="w-full h-full object-cover object-center"
+        style={{ transform: "scaleX(-1)" }}
+      />
+      {/* Gradient fade to primary on the left edge */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: "linear-gradient(to right, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.6) 15%, transparent 45%)",
+        }}
+      />
     </div>
   </section>
 );
