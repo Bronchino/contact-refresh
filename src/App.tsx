@@ -16,6 +16,8 @@ import ScreeningVsDiagnostic from "./pages/blog/ScreeningVsDiagnostic";
 import StreptococcoB from "./pages/blog/StreptococcoB";
 import GravidanzaExtrauterina from "./pages/blog/GravidanzaExtrauterina";
 import Servizi from "./pages/Servizi";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
