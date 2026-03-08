@@ -28,7 +28,8 @@ const Index = () => (
             "email": "claudio.rossi@me.com",
             "image": "https://www.rossiginecologo.it/assets/dott-rossi-consulto.jpg",
             "sameAs": [
-              "https://www.miodottore.it/claudio-rossi/ginecologo/palermo"
+              "https://www.miodottore.it/claudio-rossi/ginecologo/palermo",
+              "https://www.instagram.com/dr.claudiorossi"
             ],
             "address": {
               "@type": "PostalAddress",
