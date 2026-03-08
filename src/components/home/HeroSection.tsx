@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import consultoImg from "@/assets/dott-rossi-consulto.jpg";
 
 const HeroSection = () => (
-  <section className="relative min-h-[90vh] grid lg:grid-cols-2">
+  <section className="relative min-h-[90vh] flex flex-col lg:grid lg:grid-cols-2">
     {/* Left column */}
     <div className="relative z-10 bg-primary flex items-center">
       <div className="px-8 sm:px-12 lg:px-16 xl:px-20 py-20 lg:py-0 max-w-2xl">
@@ -49,19 +49,25 @@ const HeroSection = () => (
       </div>
     </div>
 
-    {/* Right column — photo with left gradient */}
-    <div className="hidden lg:block relative">
+    {/* Right column — photo */}
+    <div className="relative h-64 sm:h-80 lg:h-auto">
       <img
         src={consultoImg}
         alt="Dott. Claudio Rossi durante un consulto con una paziente nello studio di Palermo"
         className="w-full h-full object-cover object-center"
         style={{ transform: "scaleX(-1)" }}
       />
-      {/* Gradient fade to primary on the left edge */}
+      {/* Gradient fade to primary on the left/top edge */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none hidden lg:block"
         style={{
           background: "linear-gradient(to right, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.6) 15%, transparent 45%)",
+        }}
+      />
+      <div
+        className="absolute inset-0 pointer-events-none lg:hidden"
+        style={{
+          background: "linear-gradient(to bottom, hsl(var(--primary)) 0%, transparent 40%)",
         }}
       />
     </div>
