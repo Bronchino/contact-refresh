@@ -36,7 +36,7 @@ const ChiSono = () => (
               <img
                 src={dottRossiImg}
                 alt="Dott. Claudio Rossi durante un'ecografia ostetrica"
-                className="w-full h-auto object-cover aspect-[3/4]"
+                className="w-full h-auto object-cover aspect-[4/3]"
                 loading="lazy"
               />
             </div>
