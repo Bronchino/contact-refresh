@@ -17,6 +17,7 @@ import StreptococcoB from "./pages/blog/StreptococcoB";
 import GravidanzaExtrauterina from "./pages/blog/GravidanzaExtrauterina";
 import DisturbidelCiclo from "./pages/blog/DisturbidelCiclo";
 import PapTestHpv from "./pages/blog/PapTestHpv";
+import PrimaEcografia from "./pages/blog/PrimaEcografia";
 import Servizi from "./pages/Servizi";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
@@ -49,6 +50,7 @@ const App = () => (
             <Route path="/blog/gravidanza-extrauterina" element={<GravidanzaExtrauterina />} />
             <Route path="/blog/disturbi-ciclo-mestruale" element={<DisturbidelCiclo />} />
             <Route path="/blog/pap-test-hpv" element={<PapTestHpv />} />
+            <Route path="/blog/prima-ecografia-gravidanza" element={<PrimaEcografia />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
