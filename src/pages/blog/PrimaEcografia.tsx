@@ -132,8 +132,8 @@ const PrimaEcografia = () => {
                       </p>
                     </div>
                   ) : canBookNow ? (
-                    <div className="rounded-xl bg-green-50 border border-green-200 p-4">
-                      <p className="text-sm text-green-800 font-medium">
+                    <div className="rounded-xl bg-primary/10 border border-primary/20 p-4">
+                      <p className="text-sm text-primary font-medium">
                         ✓ Sei nel periodo ideale per la prima ecografia! Prenota adesso la tua visita.
                       </p>
                     </div>
