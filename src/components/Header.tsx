@@ -66,17 +66,19 @@ const Header = () => {
           {/* Desktop right actions */}
           <div className="hidden lg:flex items-center gap-3">
             {/* Area Referti */}
-            <a
-              href="#"
-              className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
-                scrolled
-                  ? "border-border text-foreground hover:border-primary hover:text-primary"
-                  : "border-primary-foreground/40 text-primary-foreground hover:border-accent hover:text-accent"
-              }`}
-            >
-              <FileText className="w-4 h-4" />
-              Area Referti
-            </a>
+             <a
+               href="https://pazienti.refertoincloud.it"
+               target="_blank"
+               rel="noopener noreferrer"
+               className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
+                 scrolled
+                   ? "border-border text-foreground hover:border-primary hover:text-primary"
+                   : "border-primary-foreground/40 text-primary-foreground hover:border-accent hover:text-accent"
+               }`}
+             >
+               <FileText className="w-4 h-4" />
+               Area Referti
+             </a>
 
             {/* Phone */}
             <a
@@ -125,12 +127,14 @@ const Header = () => {
 
                 <div className="mt-8 flex flex-col gap-3 border-t border-border pt-6">
                   <a
-                    href="#"
-                    className="flex items-center gap-3 text-foreground hover:text-primary py-2 px-3 rounded-md hover:bg-secondary transition-colors"
-                  >
-                    <FileText className="w-5 h-5" />
-                    <span className="font-medium">Accesso Area Referti</span>
-                  </a>
+                     href="https://pazienti.refertoincloud.it"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="flex items-center gap-3 text-foreground hover:text-primary py-2 px-3 rounded-md hover:bg-secondary transition-colors"
+                   >
+                     <FileText className="w-5 h-5" />
+                     <span className="font-medium">Accesso Area Referti</span>
+                   </a>
                   <a
                     href="tel:0915558609"
                     className="flex items-center gap-3 text-foreground hover:text-primary py-2 px-3 rounded-md hover:bg-secondary transition-colors"
