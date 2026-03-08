@@ -19,11 +19,14 @@ const PrimaEcografia = () => {
 
   const sevenWeeksDate = lmpDate ? addWeeks(lmpDate, 7) : null;
   const elevenWeeksDate = lmpDate ? addWeeks(lmpDate, 11) : null;
+  const dueDate = lmpDate ? addWeeks(lmpDate, 40) : null;
   const today = new Date();
 
-  const weeksPregnant = lmpDate
-    ? Math.floor((today.getTime() - lmpDate.getTime()) / (7 * 24 * 60 * 60 * 1000))
+  const totalDays = lmpDate
+    ? Math.floor((today.getTime() - lmpDate.getTime()) / (24 * 60 * 60 * 1000))
     : null;
+  const weeksPregnant = totalDays !== null ? Math.floor(totalDays / 7) : null;
+  const daysRemainder = totalDays !== null ? totalDays % 7 : null;
 
   const canBookNow = sevenWeeksDate && (isAfter(today, sevenWeeksDate) || today.toDateString() === sevenWeeksDate.toDateString());
   const isPastWindow = elevenWeeksDate && isAfter(today, elevenWeeksDate);
@@ -108,20 +111,30 @@ const PrimaEcografia = () => {
 
               {lmpDate && sevenWeeksDate && elevenWeeksDate && (
                 <div className="mt-6 space-y-4">
-                  <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="grid sm:grid-cols-3 gap-4">
                     <div className="rounded-xl bg-primary/5 border border-primary/15 p-4">
-                      <p className="text-xs font-medium uppercase tracking-wider text-primary mb-1">Settimana attuale</p>
+                      <p className="text-xs font-medium uppercase tracking-wider text-primary mb-1">Età gestazionale</p>
                       <p className="font-serif text-2xl text-foreground">
                         {weeksPregnant !== null && weeksPregnant >= 0
-                          ? `${weeksPregnant}ª settimana`
-                          : "Non ancora in gravidanza"}
+                          ? `${weeksPregnant}+${daysRemainder}`
+                          : "—"}
                       </p>
+                      {weeksPregnant !== null && weeksPregnant >= 0 && (
+                        <p className="text-xs text-muted-foreground mt-1">{weeksPregnant} settimane e {daysRemainder} giorni</p>
+                      )}
                     </div>
                     <div className="rounded-xl bg-accent/10 border border-accent/20 p-4">
                       <p className="text-xs font-medium uppercase tracking-wider text-accent-foreground mb-1">7ª settimana il</p>
                       <p className="font-serif text-2xl text-foreground">
                         {format(sevenWeeksDate, "d MMMM yyyy", { locale: it })}
                       </p>
+                    </div>
+                    <div className="rounded-xl bg-primary/5 border border-primary/15 p-4">
+                      <p className="text-xs font-medium uppercase tracking-wider text-primary mb-1">Data presunta parto</p>
+                      <p className="font-serif text-2xl text-foreground">
+                        {dueDate ? format(dueDate, "d MMMM yyyy", { locale: it }) : "—"}
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-1">40ª settimana</p>
                     </div>
                   </div>
 
