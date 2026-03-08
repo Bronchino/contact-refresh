@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import dottImg from "@/assets/dott-rossi-about.jpg";
 
 const AboutSection = () => (
   <section className="bg-primary py-20 sm:py-28">
