@@ -148,7 +148,7 @@ const gynecologyServices: ServiceCard[] = [
     icon: <UserRound className="w-7 h-7" />,
     title: "Prima visita ginecologica",
     description: "Prima visita specialistica per adolescenti e giovani donne, in un ambiente accogliente e rispettoso",
-    link: "#",
+    link: "/blog/prima-visita-ginecologica",
   },
   {
     icon: <TestTube className="w-7 h-7" />,
