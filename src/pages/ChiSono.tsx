@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import ContactCTA from "@/components/ContactCTA";
+import dottRossiImg from "@/assets/dott-rossi-ecografia.jpg";
 import { GraduationCap, Stethoscope, Baby, BookOpen, Heart, Scan } from "lucide-react";
 
 const ChiSono = () => (
