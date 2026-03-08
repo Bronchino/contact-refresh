@@ -111,20 +111,30 @@ const PrimaEcografia = () => {
 
               {lmpDate && sevenWeeksDate && elevenWeeksDate && (
                 <div className="mt-6 space-y-4">
-                  <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="grid sm:grid-cols-3 gap-4">
                     <div className="rounded-xl bg-primary/5 border border-primary/15 p-4">
-                      <p className="text-xs font-medium uppercase tracking-wider text-primary mb-1">Settimana attuale</p>
+                      <p className="text-xs font-medium uppercase tracking-wider text-primary mb-1">Età gestazionale</p>
                       <p className="font-serif text-2xl text-foreground">
                         {weeksPregnant !== null && weeksPregnant >= 0
-                          ? `${weeksPregnant}ª settimana`
-                          : "Non ancora in gravidanza"}
+                          ? `${weeksPregnant}+${daysRemainder}`
+                          : "—"}
                       </p>
+                      {weeksPregnant !== null && weeksPregnant >= 0 && (
+                        <p className="text-xs text-muted-foreground mt-1">{weeksPregnant} settimane e {daysRemainder} giorni</p>
+                      )}
                     </div>
                     <div className="rounded-xl bg-accent/10 border border-accent/20 p-4">
                       <p className="text-xs font-medium uppercase tracking-wider text-accent-foreground mb-1">7ª settimana il</p>
                       <p className="font-serif text-2xl text-foreground">
                         {format(sevenWeeksDate, "d MMMM yyyy", { locale: it })}
                       </p>
+                    </div>
+                    <div className="rounded-xl bg-primary/5 border border-primary/15 p-4">
+                      <p className="text-xs font-medium uppercase tracking-wider text-primary mb-1">Data presunta parto</p>
+                      <p className="font-serif text-2xl text-foreground">
+                        {dueDate ? format(dueDate, "d MMMM yyyy", { locale: it }) : "—"}
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-1">40ª settimana</p>
                     </div>
                   </div>
 
