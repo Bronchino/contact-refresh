@@ -14,6 +14,7 @@ import ScreeningPrenatale from "./pages/blog/ScreeningPrenatale";
 import ScreeningVsDiagnostic from "./pages/blog/ScreeningVsDiagnostic";
 import StreptococcoB from "./pages/blog/StreptococcoB";
 import GravidanzaExtrauterina from "./pages/blog/GravidanzaExtrauterina";
+import Servizi from "./pages/Servizi";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/chi-sono" element={<ChiSono />} />
+            <Route path="/servizi" element={<Servizi />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/chirurgia-laparoscopica" element={<ChirurgiaLaparoscopica />} />
             <Route path="/blog/infertilita" element={<Infertilita />} />
