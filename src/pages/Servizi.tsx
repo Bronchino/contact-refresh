@@ -243,37 +243,27 @@ const Servizi = () => {
 
       <Header />
 
-      <main className="pt-24 pb-16">
-        {/* Breadcrumb */}
-        <div className="max-w-5xl mx-auto px-6">
-          <BackButton />
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to="/">Home</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Servizi</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
+      {/* Hero */}
+      <section className="relative bg-hero overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.06] pointer-events-none" aria-hidden="true">
+          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-accent blur-3xl -translate-y-1/2 translate-x-1/2" />
         </div>
-
-        {/* Hero */}
-        <section className="max-w-5xl mx-auto px-6 mt-8 mb-16 text-center">
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-6">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 pt-32 sm:pt-40 pb-20 sm:pb-28">
+          <p className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-accent mb-4 flex items-center gap-3 animate-fade-up">
+            <span className="w-8 h-px bg-accent/60" />
+            Servizi
+          </p>
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-primary-foreground tracking-tight leading-tight animate-fade-up [animation-delay:100ms]">
             Servizi
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Lo studio del Dott. Claudio Rossi a Palermo offre un'ampia gamma di prestazioni specialistiche
-            in <strong>ginecologia</strong> e <strong>ostetricia</strong>, dalla prevenzione alla diagnosi,
-            dalla chirurgia mini-invasiva ai percorsi di fertilità, con un approccio personalizzato e
-            attento alla persona.
+          <p className="mt-4 text-lg text-primary-foreground/80 max-w-2xl animate-fade-up [animation-delay:200ms]">
+            Prestazioni specialistiche in ginecologia e ostetricia, dalla prevenzione alla diagnosi,
+            dalla chirurgia mini-invasiva ai percorsi di fertilità.
           </p>
-        </section>
+        </div>
+      </section>
+
+      <main className="py-16 sm:py-24">
 
         {/* Ostetricia */}
         <section className="max-w-6xl mx-auto px-6 mb-20">
