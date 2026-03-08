@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import ContactCTA from "@/components/ContactCTA";
+import dottRossiImg from "@/assets/dott-rossi-ecografia.jpg";
 import { GraduationCap, Stethoscope, Baby, BookOpen, Heart, Scan } from "lucide-react";
 
 const ChiSono = () => (
@@ -28,10 +29,24 @@ const ChiSono = () => (
 
     {/* Introduzione */}
     <section className="py-16 sm:py-24 bg-background">
-      <div className="max-w-3xl mx-auto px-6 sm:px-8">
-        <p className="font-sans text-lg sm:text-xl text-foreground leading-relaxed">
-          Con oltre <strong className="font-semibold">25 anni di attività clinica e chirurgica ospedaliera</strong> in ginecologia e ostetricia, sono attualmente Dirigente Medico presso l'AOOR Villa Sofia Cervello di Palermo, dove sono titolare di incarico di alta specializzazione in chirurgia della fertilità. Il mio studio privato in Via Marchese Ugo 56 è un punto di riferimento per le donne che cercano un approccio diagnostico rigoroso, un'esperienza chirurgica solida e un'attenzione genuina alla persona.
-        </p>
+      <div className="max-w-5xl mx-auto px-6 sm:px-8">
+        <div className="grid lg:grid-cols-5 gap-10 lg:gap-14 items-center">
+          <div className="lg:col-span-2 order-1">
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src={dottRossiImg}
+                alt="Dott. Claudio Rossi durante un'ecografia ostetrica"
+                className="w-full h-auto object-cover aspect-[3/4]"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div className="lg:col-span-3 order-2">
+            <p className="font-sans text-lg sm:text-xl text-foreground leading-relaxed">
+              Con oltre <strong className="font-semibold">25 anni di attività clinica e chirurgica ospedaliera</strong> in ginecologia e ostetricia, sono attualmente Dirigente Medico presso l'AOOR Villa Sofia Cervello di Palermo, dove sono titolare di incarico di alta specializzazione in chirurgia della fertilità. Il mio studio privato in Via Marchese Ugo 56 è un punto di riferimento per le donne che cercano un approccio diagnostico rigoroso, un'esperienza chirurgica solida e un'attenzione genuina alla persona.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
